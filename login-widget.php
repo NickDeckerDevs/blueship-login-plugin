@@ -78,10 +78,7 @@ class ipc_login_widget extends WP_Widget {
         
         echo $before_widget;
         
-        echo '<ul class="sub-menu">';
-        echo '<li class="menu-item menu-item-login-widget" style="float: left; width: 100%; white-space: normal;">';
-        echo '<div id="ipc-login-widget" class="widget carrierrate-login widget-carrierrate-login">';
-        echo '<div class="widget-wrap widget-inside">';
+       
         echo '<h3 class="widget-title">' . $title . '</h3>';
         echo '<form id="ipc_login" name="' . $title .'" method="post">';
         echo '<label for="user_name-3">Username</label><input type="text" name="' . $username . '" id="' . $username . '" title="Username" placeholder="Username" value="">';
@@ -101,7 +98,6 @@ class ipc_login_widget extends WP_Widget {
         echo 'return false;';
         echo '}';
         echo '</script>';
-        echo '</div></div></li></ul>';
         echo $after_widget;
     }
     
